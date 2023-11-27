@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 
 
-
-
 function TodoList () {
     const [todos, setTodos] = useState([]);
     const [inputValue, setInputValue] = useState('');
@@ -30,7 +28,7 @@ function TodoList () {
           <ol>
             {todos.map((todo, index) => (
               <li key={index}>{todo}
-              <button className='elBut' onClick={() =>handleDelete(index)}>Delete</button>
+              <button className='elBut' onClick={() => handleDelete(index)}>Delete</button>
               </li>
             ))}
           </ol>
